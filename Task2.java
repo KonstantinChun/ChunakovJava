@@ -5,11 +5,8 @@ public class Task2 {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите имя: ");
         String name = scanner.nextLine();
-
         if (name.equals("Вячеслав")) {
             System.out.println("Привет, Вячеслав");
-        } else if (name.equals("вячеслав")) {
-            System.out.println("Имена пишутся с заглавной буквы");
         } else {
             System.out.println("Нет такого имени");
         }
