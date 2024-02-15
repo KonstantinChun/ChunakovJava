@@ -6,7 +6,6 @@ public class Task3 {
         System.out.print("Введите любое количество целых чисел через пробел: ");
         String numbers = scanner.nextLine();
 
-        try {
             String[] numberArray = numbers.split(" ");
             StringBuilder resultMsg = new StringBuilder();
 
@@ -16,12 +15,7 @@ public class Task3 {
                     resultMsg.append(number).append(" ");
                 }
             }
-
             System.out.println(resultMsg.toString());
-        } catch (NumberFormatException e) {
-            System.out.println("Среди введенных значений есть не целые числа");
-        } finally {
             scanner.close();
-        }
     }
 }
