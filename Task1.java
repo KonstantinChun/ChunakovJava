@@ -6,17 +6,9 @@ public class Task1 {
         System.out.print("Введите целое число: ");
         String number = scanner.nextLine();
 
-        try {
-            if (Integer.parseInt(number) > 7) {
+        if (Integer.parseInt(number) > 7) {
                 System.out.println("Привет");
-            } else {
-                System.out.println("Введенное число <=7");
-            }
-        } catch (NumberFormatException e) {
-            System.out.println("Введено некорректное значение");
-        } finally {
-            scanner.close();
-        }
+        } 
     }
 }
 
